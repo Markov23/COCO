@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.AlfombradoTapiceria"
+    android:background="#E9E8E8"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#08A6BE">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#08A6BE"
+            android:src="@drawable/atras"
+            android:paddingStart="10dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#08A6BE"
+            android:text="Alfombra y Tapicería"
+            android:textSize="14sp"
+            android:textColor="#F8F8F8"
+            android:layout_weight="100"
+            android:paddingStart="10dp"
+            android:fontFamily="sans-serif-thin"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#08A6BE"
+            android:src="@drawable/guardar"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagenAire"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/resultados"/>
+
+            <LinearLayout
+                android:layout_below="@id/imagenAire"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/AireAcondicionadoSeleccionTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/botones">
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Seleccionar Papel tapiz o Alfombra"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"
+                        android:padding="10dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/desplegar"
+                        android:layout_weight="1"
+                        android:padding="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ToneladasCorriente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/botones">
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Forma"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/desplegar"
+                        android:layout_weight="1"
+                        android:padding="5dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/barra"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Tipo"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/desplegar"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#C7C6C6"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¿Desconoce el área? clicke aquí"
+                            android:layout_marginLeft="20dp"/>
+                        <Switch
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/botones"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:paddingLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Área"
+                            android:fontFamily="sans-serif"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"/>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/barra"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+
+                        <EditText
+                            android:paddingLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Largo"
+                            android:fontFamily="sans-serif"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"/>
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/cruz"
+                            android:layout_marginEnd="10dp"/>
+                        <EditText
+                            android:paddingLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Largo"
+                            android:fontFamily="sans-serif"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+                    <Button
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cotizar"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:background="#C74545"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

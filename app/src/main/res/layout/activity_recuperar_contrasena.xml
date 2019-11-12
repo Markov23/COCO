@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RecuperarContrasena"
+    android:background="@drawable/recuperarpassword"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cruzblanca"
+            android:paddingStart="10dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_weight="100"
+            android:paddingStart="10dp"
+            android:fontFamily="sans-serif-thin"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/lol"
+       android:layout_gravity="center"
+       android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enseguida restableceremos tu contraseña"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese correo electrónico"
+        android:background="@drawable/botones"
+        android:fontFamily="sans-serif"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="continuar"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:textColor="#3DB3D3"
+            android:background="@drawable/botonpassword"/>
+    </RelativeLayout>
+</LinearLayout>
