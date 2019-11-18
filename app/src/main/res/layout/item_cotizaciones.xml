@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayoutCotizaciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff">
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="20dp"
+                android:text="N° 00000"
+                android:textColor="#ffffff"
+                android:background="#08A6BE"
+                android:gravity="center"
+                android:layout_span="6"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <TextView
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:text="Descripción"/>
+
+            <TextView
+                android:text="Cantidad"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:text="Precio Unitario"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <TextView
+                android:text="Total"
+                android:id="@+id/textView1"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <TextView
+                android:text="item 1"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="00"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="00"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="00"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <TextView
+                android:text="Day Low"
+                android:id="@+id/textView2"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="15°F"
+                android:id="@+id/textView3"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="14°F"
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="3°F"
+                android:id="@+id/textView5"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/netoTotal"
+                android:text="NETO TOTAL"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/imageView1"/>
+            <ImageView
+                android:id="@+id/imageView2"/>
+            <ImageView
+                android:id="@+id/imageView3"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
